@@ -34,7 +34,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 85vh;
   padding: 0 9%;
   padding-top: 5.0rem;
   padding-bottom: 2rem;
@@ -120,6 +120,7 @@ header label {
 }
 
 .inicio {
+  margin-top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,7 +130,7 @@ header label {
 }
 
 .inicio .img img {
-  width: 30vw;
+  width: 32vw;
   animation: float 3s linear infinite;
 }
 
