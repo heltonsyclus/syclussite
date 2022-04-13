@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <title>Syclus - Gestão inteligente</title>
@@ -27,7 +29,7 @@
       <label for="menu-bar" class="fas fa-bars"></label>
 
       <nav class="navbar">
-        <a href="#inicio">inicio</a>
+        <a href="#inicio">Inicio</a>
         <a href="#empresa">Empresa</a>
         <a href="#features">Serviços</a>
         <a href="#preco">Preço</a>
@@ -43,7 +45,7 @@
       </div>
 
       <div class="img">
-        <img src="img/erp.svg" alt="erp" />
+        <img src="img/erp.svg" alt="erp" id="img-principal" />
       </div>
     </section>
 
@@ -51,7 +53,7 @@
       <h1 class="heading white">Empresa</h1>
 
       <div class="column">
-        <div class="img">
+        <div class="img" id="img-logo">
           <img src="img/Syclus-big.svg" alt="Syclus" style="width: 70%" />
         </div>
 
@@ -146,12 +148,24 @@
           </ul>
           <a href="#" class="btn">Contratar</a>
         </div>
+
+        <div class="box">
+          <h3 class="title">personalizado</h3>
+          <div class="price">R$ 250<span>/mensal</span></div>
+          <ul>
+            <li><i class="fas fa-check"></i> texto1</li>
+            <li><i class="fas fa-check"></i> texto2</li>
+            <li><i class="fas fa-check"></i> texto3</li>
+            <li><i class="fas fa-check"></i> texto4</li>
+          </ul>
+          <a href="#" class="btn">Contratar</a>
+        </div>
       </div>
     </section>
 
     <section class="contato" id="contato">
       <div class="img">
-        <h3 style="font-size: 20px;">Arapiraca - Al</h3>
+        <h3 style="font-size: 20px">Arapiraca - Al</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15728.762782589036!2d-36.6628752!3d-9.7499088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7ce6609ef5b0df94!2sSyclus!5e0!3m2!1spt-BR!2sbr!4v1649791576175!5m2!1spt-BR!2sbr"
           width="300"
@@ -162,7 +176,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         >
         </iframe>
-        <h3  style="font-size: 20px;">Maceió - Al</h3>
+        <h3 style="font-size: 20px">Maceió - Al</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.372996873896!2d-35.7197825852087!3d-9.649135293092288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145b175283827%3A0x2d40aecf4715f0cb!2sSyclus!5e0!3m2!1spt-BR!2sbr!4v1632512108519!5m2!1spt-BR!2sbr"
           width="300"
@@ -204,7 +218,7 @@
       <div class="box-container">
         <div class="box">
           <h3>Syclus</h3>
-          <p style="text-transform: lowercase;">
+          <p style="text-transform: lowercase">
             O Syclus ERP é um sistema de gestão empresarial que atende as
             principais demandas operacionais e gerenciais do seu negócio, com
             processos e relatórios que controlam a evolução dos objetivos,
@@ -221,7 +235,6 @@
           <a href="#">Preço</a>
           <a href="#">Contato</a>
         </div>
-
 
         <div class="box">
           <h3>Contato</h3>

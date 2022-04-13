@@ -2,11 +2,11 @@
   --primary: #109cf1;
   --secundary: #0b649c;
   --gradient: linear-gradient(90deg, var(--primary), var(--secundary));
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -36,7 +36,7 @@ body {
 section {
   min-height: 85vh;
   padding: 0 9%;
-  padding-top: 5.0rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
 }
 
@@ -253,7 +253,7 @@ header label {
   padding: 1rem;
   text-align: center;
   position: relative;
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);  
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
   flex: 1 1 30rem;
   border-radius: 0.5rem;
 }
@@ -486,94 +486,102 @@ header label {
   text-align: center;
 }
 
-
 @media (max-width: 1200px) {
-    html {
-      font-size: 55%;
-    }
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 0 3%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header label {
+    visibility: visible;
+    opacity: 1;
+  }
+  #img-principal {
+    display: none;
+  }
+  #img-logo {
+    text-align: center;
+    margin: 20px auto 0 auto;
+  }
+  .empresa .column .img img {
+    width: 250px;
   }
   
-  @media (max-width: 991px) {
-    section {
-      padding: 0 3%;
-      padding-top: 7.5rem;
-      padding-bottom: 2rem;
-    }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: 0.2s linear;
   }
-  
-  @media (max-width: 768px) {
-    header label {
-      visibility: visible;
-      opacity: 1;
-    }
-  
-    header .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background: #fff;
-      padding: 1rem 2rem;
-      border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-      transform-origin: top;
-      transform: scaleY(0);
-      opacity: 0;
-      transition: 0.2s linear;
-    }
-  
-    header .navbar a {
-      display: block;
-      margin: 2rem 0;
-      font-size: 2rem;
-    }
-  
-    header input:checked ~ .navbar {
-      transform: scaleY(1);
-      opacity: 1;
-    }
-  
-    header input:checked ~ label::before {
-      content: "\f00d";
-    }
-  
-    .inicio {
-      flex-flow: column-reverse;
-    }
-  
-    .inicio .img img {
-      width: 100%;
-    }
-  
-    .inicio .content h3 {
-      font-size: 3.6rem;
-    }
-  
-    .inicio .content p {
-      font-size: 1.5rem;
-    }
-  
-    .empresa {
-      background-position: right;
-    }
-  
-    .newsletter p {
-      width: auto;
-    }
+
+  header .navbar a {
+    display: block;
+    margin: 2rem 0;
+    font-size: 2rem;
   }
-  
-  @media (max-width: 450px) {
-    html {
-      font-size: 50%;
-    }
-  
-    .empresa .column .content .buttons a {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .empresa .column .content .buttons a:last-child {
-      margin: 1rem 0;
-    }
+
+  header input:checked ~ .navbar {
+    transform: scaleY(1);
+    opacity: 1;
   }
-  
+
+  header input:checked ~ label::before {
+    content: "\f00d";
+  }
+
+  .inicio {
+    flex-flow: column-reverse;
+  }
+
+  .inicio .img img {
+    width: 100%;
+  }
+
+  .inicio .content h3 {
+    font-size: 3.8rem;
+  }
+
+  .inicio .content p {
+    font-size: 2.0rem;
+  }
+
+  .empresa {
+    background-position: right;
+  }
+
+  .newsletter p {
+    width: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
+
+  .empresa .column .content .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .empresa .column .content .buttons a:last-child {
+    margin: 1rem 0;
+  }
+}
