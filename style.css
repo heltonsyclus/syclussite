@@ -106,7 +106,15 @@ header .navbar a {
 header .navbar a:hover {
   color: var(--secundary);
 }
-
+header .navbar a:active { 
+  color: var(--secundary);
+}
+.header .navbar a:focus{
+  border-color: #088C19;    
+}
+.header .navbar a:visited h2, .header .navbar a:visited p {
+  color: black;
+}
 header input {
   display: none;
 }
@@ -486,6 +494,7 @@ header label {
   padding: 2.5rem 1rem;
   text-align: center;
 }
+
 
 @media (max-width: 1200px) {
   html {
